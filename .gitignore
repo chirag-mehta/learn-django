@@ -189,6 +189,7 @@ ENV/
 env.bak/ 
 venv.bak/
 Lib
+Scripts
 
 # mkdocs documentation 
 /site 
