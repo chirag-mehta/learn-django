@@ -6,7 +6,11 @@ from django.shortcuts import render
 
 def home_view(request, *args, **kwargs):
     print(request.user)
-    return render(request, 'home.html', {})
+    my_context = {
+        'my_message': 'Django is quite awesome! Pleasantly surprised',
+        "my_list": [1, 2, 3, 4]
+    }
+    return render(request, 'home.html', my_context)
 
 
 def contact_view(request, *args, **kwargs):
